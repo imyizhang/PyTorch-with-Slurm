@@ -7,18 +7,15 @@
 # <https://github.com/pytorch/pytorch/blob/master/torch/distributed/launch.py>
 
 """How to use `torch.distributed.launch`
-
 0. To look up optional arguments:
 ::
     >>> python -m torch.distributed.launch --help
-
 1. Single-Node Multi-GPU Training:
 ::
     >>> python -m torch.distributed.launch \
         --use_env \
         --nproc_per_node=GPUS_PER_NODE \
         YOUR_TRAINING_SCRIPT.py --arg1 --arg2 ... (arguments of your script)
-
 2. Multi-Node Multi-GPU Training (e.g., two nodes):
 Node 1:
 ::
@@ -53,11 +50,10 @@ import torchvision
 def main(args):
 
     # 0. set up distributed device
-    setup_environ()
-    num_gpus = torch.cuda.device_count()
+    gpus_per_node = torch.cuda.device_count()
     print(
         "\n Let's play with MNIST using torch {} on {} GPU(s)!\n".format(
-            torch.__version__, num_gpus
+            torch.__version__, gpus_per_node
         )
     )
     local_rank = int(os.environ['LOCAL_RANK'])
@@ -92,7 +88,7 @@ def main(args):
     )
 
     # 2. define pretrained neural network
-    model = torchvision.models.resnet18(pretrained=False)
+    model = torchvision.models.resnet18(pretrained=True)
     model.conv1 = torch.nn.Conv2d(1, 64, kernel_size=7, stride=2, padding=3, bias=False)
     num_features = model.fc.in_features
     num_classes = 10
@@ -105,7 +101,7 @@ def main(args):
     )
 
     # 3. define loss and optimizer
-    criterion = torch.nn.CrossEntropyLoss(reduction='sum')
+    criterion = torch.nn.CrossEntropyLoss(reduction='sum').to(device)
     optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
 
     since = time.time()

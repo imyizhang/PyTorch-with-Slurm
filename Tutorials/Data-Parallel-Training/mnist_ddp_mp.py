@@ -78,7 +78,7 @@ def trainer(local_rank, world_size, args):
     )
 
     # 3. define loss and optimizer
-    criterion = torch.nn.CrossEntropyLoss(reduction='sum')
+    criterion = torch.nn.CrossEntropyLoss(reduction='sum').to(device)
     optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
 
     since = time.time()

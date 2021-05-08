@@ -13,20 +13,12 @@ import torchvision
 
 
 def setup_environ():
-    hostname = os.environ['HOSTNAME']
-    nodelist = os.environ['SLURM_NODELIST']
-    world_size = int(os.environ['SLURM_NTASKS'])
-    rank = int(os.environ['SLURM_PROCID'])
-    nproc_per_node = torch.cuda.device_count()
-    print(
-        '\n       Master Node: {} | Node List: {}\n'.format(
-            hostname, nodelist
-        )
-    )
-    os.environ['WORLD_SIZE'] = str(world_size)
-    os.environ['RANK'] = str(rank)
-    os.environ['LOCAL_RANK'] = str(rank % nproc_per_node)
-    os.environ['MASTER_ADDR'] = hostname #'127.0.0.1'
+    # world_size = nproc_per_node * nnodes, nproc_per_node = GPUS_PER_NODE
+    os.environ['WORLD_SIZE'] = os.environ['SLURM_NTASKS']
+    # rank = nproc_per_node * node_rank + local_rank
+    os.environ['RANK'] = os.environ['SLURM_PROCID']
+    os.environ['LOCAL_RANK'] = os.environ['SLURM_LOCALID']
+    os.environ['MASTER_ADDR'] = os.environ['SLURM_SUBMIT_HOST']
     os.environ['MASTER_PORT'] = '29500'
 
 def main(args):
@@ -35,7 +27,7 @@ def main(args):
     setup_environ()
     gpus_per_node = torch.cuda.device_count()
     print(
-        " Let's play with MNIST using torch {} on {} GPU(s)!\n".format(
+        "\n Let's play with MNIST using torch {} on {} GPU(s)!\n".format(
             torch.__version__, gpus_per_node
         )
     )
@@ -84,7 +76,7 @@ def main(args):
     )
 
     # 3. define loss and optimizer
-    criterion = torch.nn.CrossEntropyLoss(reduction='sum')
+    criterion = torch.nn.CrossEntropyLoss(reduction='sum').to(device)
     optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
 
     since = time.time()
