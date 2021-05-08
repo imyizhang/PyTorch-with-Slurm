@@ -1,0 +1,158 @@
+DEBUG - full hostname: gpu003.yggdrasil
+DEBUG - work directory: /home/users/z/zhangyi9/workspace/tutorial
+INFO - started loading Python, cuDNN and CUDA
+DEBUG - CUDA_VISIBLE_DEVICES: 0,1,2,3
+INFO - started activating virtual environment
+INFO - started running Python script
+
+       Master Node: gpu003 | Node List: gpu[003-004]
+
+ Let's play with MNIST using torch 1.8.1+cu111 on 4 GPU(s)!
+
+             Local Rank: 2 | Global Rank: 2
+
+
+       Master Node: gpu003 | Node List: gpu[003-004]
+
+ Let's play with MNIST using torch 1.8.1+cu111 on 4 GPU(s)!
+
+             Local Rank: 1 | Global Rank: 1
+
+
+       Master Node: gpu003 | Node List: gpu[003-004]
+
+ Let's play with MNIST using torch 1.8.1+cu111 on 4 GPU(s)!
+
+             Local Rank: 0 | Global Rank: 0
+
+
+       Master Node: gpu003 | Node List: gpu[003-004]
+
+ Let's play with MNIST using torch 1.8.1+cu111 on 4 GPU(s)!
+
+             Local Rank: 2 | Global Rank: 6
+
+
+       Master Node: gpu003 | Node List: gpu[003-004]
+
+ Let's play with MNIST using torch 1.8.1+cu111 on 4 GPU(s)!
+
+             Local Rank: 3 | Global Rank: 3
+
+
+       Master Node: gpu003 | Node List: gpu[003-004]
+
+ Let's play with MNIST using torch 1.8.1+cu111 on 4 GPU(s)!
+
+             Local Rank: 0 | Global Rank: 4
+
+
+       Master Node: gpu003 | Node List: gpu[003-004]
+
+ Let's play with MNIST using torch 1.8.1+cu111 on 4 GPU(s)!
+
+             Local Rank: 1 | Global Rank: 5
+
+
+       Master Node: gpu003 | Node List: gpu[003-004]
+
+ Let's play with MNIST using torch 1.8.1+cu111 on 4 GPU(s)!
+
+             Local Rank: 3 | Global Rank: 7
+
+            =======  Training Started ======= 
+
+            =======  Training Started ======= 
+
+            =======  Training Started ======= 
+
+            =======  Training Started ======= 
+
+            =======  Training Started ======= 
+
+            =======  Training Started ======= 
+
+            =======  Training Started ======= 
+
+            =======  Training Started ======= 
+
+ Step: [  4/4] [1/5] | Loss: 1.706 | Accuracy: 42.827%
+ Step: [  4/4] [1/5] | Loss: 1.691 | Accuracy: 43.360%
+ Step: [  4/4] [1/5] | Loss: 1.695 | Accuracy: 42.707%
+ Step: [  4/4] [1/5] | Loss: 1.719 | Accuracy: 42.280%
+ Step: [  4/4] [1/5] | Loss: 1.700 | Accuracy: 42.533%
+ Step: [  4/4] [1/5] | Loss: 1.683 | Accuracy: 43.333%
+ Step: [  4/4] [1/5] | Loss: 1.694 | Accuracy: 43.280%
+ Step: [  4/4] [1/5] | Loss: 1.696 | Accuracy: 42.933%
+ Step: [  4/4] [2/5] | Loss: 0.343 | Accuracy: 89.427%
+ Step: [  4/4] [2/5] | Loss: 0.351 | Accuracy: 89.160%
+ Step: [  4/4] [2/5] | Loss: 0.311 | Accuracy: 90.200%
+ Step: [  4/4] [2/5] | Loss: 0.346 | Accuracy: 89.760%
+ Step: [  4/4] [2/5] | Loss: 0.312 | Accuracy: 90.320%
+ Step: [  4/4] [2/5] | Loss: 0.327 | Accuracy: 89.787%
+ Step: [  4/4] [2/5] | Loss: 0.331 | Accuracy: 90.120%
+ Step: [  4/4] [2/5] | Loss: 0.327 | Accuracy: 89.733%
+ Step: [  4/4] [3/5] | Loss: 0.145 | Accuracy: 95.667%
+ Step: [  4/4] [3/5] | Loss: 0.165 | Accuracy: 95.093%
+ Step: [  4/4] [3/5] | Loss: 0.143 | Accuracy: 95.627%
+ Step: [  4/4] [3/5] | Loss: 0.159 | Accuracy: 95.267%
+ Step: [  4/4] [3/5] | Loss: 0.153 | Accuracy: 95.080%
+ Step: [  4/4] [3/5] | Loss: 0.145 | Accuracy: 95.693%
+ Step: [  4/4] [3/5] | Loss: 0.150 | Accuracy: 95.587%
+ Step: [  4/4] [3/5] | Loss: 0.141 | Accuracy: 95.440%
+ Step: [  4/4] [4/5] | Loss: 0.102 | Accuracy: 96.800%
+ Step: [  4/4] [4/5] | Loss: 0.106 | Accuracy: 97.027%
+ Step: [  4/4] [4/5] | Loss: 0.081 | Accuracy: 97.360%
+ Step: [  4/4] [4/5] | Loss: 0.091 | Accuracy: 97.360%
+ Step: [  4/4] [4/5] | Loss: 0.096 | Accuracy: 97.000%
+ Step: [  4/4] [4/5] | Loss: 0.093 | Accuracy: 97.240%
+ Step: [  4/4] [4/5] | Loss: 0.102 | Accuracy: 96.973%
+ Step: [  4/4] [4/5] | Loss: 0.095 | Accuracy: 97.080%
+ Step: [  4/4] [5/5] | Loss: 0.066 | Accuracy: 97.973%
+ Step: [  4/4] [5/5] | Loss: 0.065 | Accuracy: 98.107%
+ Step: [  4/4] [5/5] | Loss: 0.079 | Accuracy: 97.653%
+ Step: [  4/4] [5/5] | Loss: 0.071 | Accuracy: 97.760%
+ Step: [  4/4] [5/5] | Loss: 0.071 | Accuracy: 97.853%
+ Step: [  4/4] [5/5] | Loss: 0.066 | Accuracy: 98.027%
+ Step: [  4/4] [5/5] | Loss: 0.059 | Accuracy: 98.187%
+ Step: [  4/4] [5/5] | Loss: 0.068 | Accuracy: 97.893%
+
+            =======  Training Finished  ======= 
+
+                Finished in 0 min 6 sec :D
+
+
+            =======  Training Finished  ======= 
+
+                Finished in 0 min 6 sec :D
+
+
+            =======  Training Finished  ======= 
+
+                Finished in 0 min 6 sec :D
+
+
+            =======  Training Finished  ======= 
+
+                Finished in 0 min 6 sec :D
+
+
+            =======  Training Finished  ======= 
+
+
+            =======  Training Finished  ======= 
+
+                Finished in 0 min 6 sec :D
+
+                Finished in 0 min 6 sec :D
+
+
+            =======  Training Finished  ======= 
+
+                Finished in 0 min 6 sec :D
+
+
+            =======  Training Finished  ======= 
+
+                Finished in 0 min 6 sec :D
+
