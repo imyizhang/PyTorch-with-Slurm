@@ -29,7 +29,8 @@ source ${HOME}/workspace/pytorch-env/bin/activate
 
 echo "INFO - started running Python script"
 srun --unbuffered python \
-    ${PWD}/mnist_ddp_slurm.py \
-    --batch_size=2048
+    ${PWD}/mnist.py \
+    --batch_size=2048 --num_workers=4 \
+    --pin_memory --distributed --use_slurm
 
 deactivate

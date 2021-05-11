@@ -42,5 +42,6 @@ srun --unbuffered singularity \
     --nv \
     ${HOME}/workspace/pytorch_sif/pytorch_${PYTORCH_VERSION}.sif \
         python \
-        ${PWD}/mnist_ddp_slurm.py \
-        --batch_size=2048
+        ${PWD}/mnist.py \
+        --batch_size=2048 --num_workers=4 \
+        --pin_memory --distributed --use_slurm
