@@ -1,8 +1,8 @@
 # Multi-Node Multi-GPU Training with Slurm
 
-* [Demo Structure]()
-* [Dependencies]()
-* [Usage]()
+* [Demo Structure](https://github.com/yzhang-dev/PyTorch-with-Slurm/tree/main/Tutorials/Multi-Node-Multi-GPU-Training-with-Slurm#demo-structure)
+* [Dependencies](https://github.com/yzhang-dev/PyTorch-with-Slurm/tree/main/Tutorials/Multi-Node-Multi-GPU-Training-with-Slurm#dependencies)
+* [Usage](https://github.com/yzhang-dev/PyTorch-with-Slurm/tree/main/Tutorials/Multi-Node-Multi-GPU-Training-with-Slurm#usage)
 
 
 
@@ -56,4 +56,3 @@ or
 ```bash
 sbatch mnist_ddp_slurm_pytorch_sif.sbatch
 ```
-

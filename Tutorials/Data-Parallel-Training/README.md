@@ -1,8 +1,8 @@
 # Data Parallel Training
 
-* [Dependencies]()
-* [Training Examples on MNIST]()
-* [Reference]()
+* [Dependencies](https://github.com/yzhang-dev/PyTorch-with-Slurm/tree/main/Tutorials/Data-Parallel-Training#dependencies)
+* [Training Examples on MNIST](https://github.com/yzhang-dev/PyTorch-with-Slurm/tree/main/Tutorials/Data-Parallel-Training#training-examples-on-mnist)
+* [Reference](https://github.com/yzhang-dev/PyTorch-with-Slurm/tree/main/Tutorials/Data-Parallel-Training#reference)
 
 
 
@@ -34,21 +34,21 @@ torchvision==0.9.1
   ```
 
 - [x] **Use multi-node (or single-node) multi-GPU [`DistributedDataParallel`](https://pytorch.org/docs/master/generated/torch.nn.parallel.DistributedDataParallel.html) (DDP) training**
-  
+
   - [x] with [`torch.distributed.launch`](https://pytorch.org/docs/stable/distributed.html#launch-utility) module [[mnist_ddp_launch.py](https://github.com/yzhang-dev/PyTorch-with-Slurm/blob/main/Tutorials/Data-Parallel-Training/mnist_ddp_launch.py)]
-  
+
     ```bash
     python -m torch.distributed.launch --use_env --nproc_per_node=4 mnist_ddp_launch.py --batch_size=1024
     ```
-  
+
   - [x] with [`torch.multiprocessing.spawn`](https://pytorch.org/docs/stable/multiprocessing.html#spawning-subprocesses) module [[mnist_ddp_mp.py](https://github.com/yzhang-dev/PyTorch-with-Slurm/blob/main/Tutorials/Data-Parallel-Training/mnist_ddp_mp.py)]
-  
+
     ```bash
     python mnist_ddp_mp.py --batch_size=1024
     ```
-  
+
   - [x] with [Slurm](https://slurm.schedmd.com/quickstart.html) cluster workload manager [[mnist_ddp_slurm.py](https://github.com/yzhang-dev/PyTorch-with-Slurm/blob/main/Tutorials/Data-Parallel-Training/mnist_ddp_slurm.py)]
-  
+
     ```bash
     srun python mnist_ddp_slurm.py --batch_size=1024
     ```
@@ -59,4 +59,3 @@ torchvision==0.9.1
 
 * [PyTorch Distributed Overview](https://pytorch.org/tutorials/beginner/dist_overview.html)
 * [`torch.distributed.launch` Script](https://github.com/pytorch/pytorch/blob/master/torch/distributed/launch.py)
-

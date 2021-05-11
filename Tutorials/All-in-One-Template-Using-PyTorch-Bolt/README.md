@@ -1,10 +1,10 @@
 # All-in-One Template Using PyTorch Bolt
 
-* [Demo Structure]()
-* [Dependencies]()
-* [Usage]()
-  * [Basic Usage]()
-  * [Usage on Slurm Cluster]()
+* [Demo Structure](https://github.com/yzhang-dev/PyTorch-with-Slurm/tree/main/Tutorials/All-in-One-Template-Using-PyTorch-Bolt#demo-structure)
+* [Dependencies](https://github.com/yzhang-dev/PyTorch-with-Slurm/tree/main/Tutorials/All-in-One-Template-Using-PyTorch-Bolt#dependencies)
+* [Usage](https://github.com/yzhang-dev/PyTorch-with-Slurm/tree/main/Tutorials/All-in-One-Template-Using-PyTorch-Bolt#usage)
+  * [Basic Usage](https://github.com/yzhang-dev/PyTorch-with-Slurm/tree/main/Tutorials/All-in-One-Template-Using-PyTorch-Bolt#basic-usage)
+  * [Usage on Slurm Cluster](https://github.com/yzhang-dev/PyTorch-with-Slurm/tree/main/Tutorials/All-in-One-Template-Using-PyTorch-Bolt#usage-on-slurm-cluster)
 
 
 
@@ -95,4 +95,3 @@ or
 ```bash
 sbatch mnist_pytorch_sif.sbatch
 ```
-

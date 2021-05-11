@@ -1,8 +1,8 @@
 # Quickstart with Slurm
 
-* [Demo Structure]()
-* [Dependencies]()
-* [Usage]()
+* [Demo Structure](https://github.com/yzhang-dev/PyTorch-with-Slurm/tree/main/Tutorials/Quickstart-with-Slurm#demo-structure)
+* [Dependencies](https://github.com/yzhang-dev/PyTorch-with-Slurm/tree/main/Tutorials/Quickstart-with-Slurm#dependencies)
+* [Usage](https://github.com/yzhang-dev/PyTorch-with-Slurm/tree/main/Tutorials/Quickstart-with-Slurm#usage)
 
 
 
@@ -43,4 +43,3 @@ or
 ```bash
 sbatch torch.cuda.is_available_pytorch_sif.sbatch
 ```
-
