@@ -1,7 +1,7 @@
 # All-in-One Template Using PyTorch Bolt
 
 * [Demo Structure](https://github.com/yzhang-dev/PyTorch-with-Slurm/tree/main/Tutorials/All-in-One-Template-Using-PyTorch-Bolt#demo-structure)
-* [Dependencies](https://github.com/yzhang-dev/PyTorch-with-Slurm/tree/main/Tutorials/All-in-One-Template-Using-PyTorch-Bolt#dependencies)
+* [Requirements](https://github.com/yzhang-dev/PyTorch-with-Slurm/tree/main/Tutorials/All-in-One-Template-Using-PyTorch-Bolt#requirements)
 * [Usage](https://github.com/yzhang-dev/PyTorch-with-Slurm/tree/main/Tutorials/All-in-One-Template-Using-PyTorch-Bolt#usage)
   * [Basic Usage](https://github.com/yzhang-dev/PyTorch-with-Slurm/tree/main/Tutorials/All-in-One-Template-Using-PyTorch-Bolt#basic-usage)
   * [Usage on Slurm Cluster](https://github.com/yzhang-dev/PyTorch-with-Slurm/tree/main/Tutorials/All-in-One-Template-Using-PyTorch-Bolt#usage-on-slurm-cluster)
@@ -27,7 +27,7 @@
 
 
 
-## Dependencies
+## Requirements
 
 ```
 torch==1.8.1

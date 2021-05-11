@@ -1,12 +1,12 @@
 # Data Parallel Training
 
-* [Dependencies](https://github.com/yzhang-dev/PyTorch-with-Slurm/tree/main/Tutorials/Data-Parallel-Training#dependencies)
+* [Requirements](https://github.com/yzhang-dev/PyTorch-with-Slurm/tree/main/Tutorials/Data-Parallel-Training#requirements)
 * [Training Examples on MNIST](https://github.com/yzhang-dev/PyTorch-with-Slurm/tree/main/Tutorials/Data-Parallel-Training#training-examples-on-mnist)
 * [Reference](https://github.com/yzhang-dev/PyTorch-with-Slurm/tree/main/Tutorials/Data-Parallel-Training#reference)
 
 
 
-## Dependencies
+## Requirements
 
 ```
 torch==1.8.1

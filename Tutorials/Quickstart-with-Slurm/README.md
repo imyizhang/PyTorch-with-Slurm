@@ -1,7 +1,7 @@
 # Quickstart with Slurm
 
 * [Demo Structure](https://github.com/yzhang-dev/PyTorch-with-Slurm/tree/main/Tutorials/Quickstart-with-Slurm#demo-structure)
-* [Dependencies](https://github.com/yzhang-dev/PyTorch-with-Slurm/tree/main/Tutorials/Quickstart-with-Slurm#dependencies)
+* [Requirements](https://github.com/yzhang-dev/PyTorch-with-Slurm/tree/main/Tutorials/Quickstart-with-Slurm#requirements)
 * [Usage](https://github.com/yzhang-dev/PyTorch-with-Slurm/tree/main/Tutorials/Quickstart-with-Slurm#usage)
 
 
@@ -13,12 +13,13 @@
 ├── README.md
 ├── torch.cuda.is_available.py
 ├── torch.cuda.is_available_pytorch_venv.sbatch
-└── torch.cuda.is_available_pytorch_sif.sbatch
+├── torch.cuda.is_available_pytorch_sif.sbatch
+└── requirements.txt
 ```
 
 
 
-## Dependencies
+## Requirements
 
 ```
 torch==1.8.1

@@ -1,7 +1,7 @@
 # Multi-Node Multi-GPU Training with Slurm
 
 * [Demo Structure](https://github.com/yzhang-dev/PyTorch-with-Slurm/tree/main/Tutorials/Multi-Node-Multi-GPU-Training-with-Slurm#demo-structure)
-* [Dependencies](https://github.com/yzhang-dev/PyTorch-with-Slurm/tree/main/Tutorials/Multi-Node-Multi-GPU-Training-with-Slurm#dependencies)
+* [Requirements](https://github.com/yzhang-dev/PyTorch-with-Slurm/tree/main/Tutorials/Multi-Node-Multi-GPU-Training-with-Slurm#requirements)
 * [Usage](https://github.com/yzhang-dev/PyTorch-with-Slurm/tree/main/Tutorials/Multi-Node-Multi-GPU-Training-with-Slurm#usage)
 
 
@@ -13,12 +13,13 @@
 ├── README.md
 ├── mnist_ddp_slurm.py
 ├── mnist_ddp_slurm_pytorch_venv.sbatch
-└── mnist_ddp_slurm_pytorch_sif.sbatch
+├── mnist_ddp_slurm_pytorch_sif.sbatch
+└── requirements.txt
 ```
 
 
 
-## Dependencies
+## Requirements
 
 ```
 torch==1.8.1
