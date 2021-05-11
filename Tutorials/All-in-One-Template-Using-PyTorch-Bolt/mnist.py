@@ -22,14 +22,13 @@ import argparse
 import os
 
 import pytorch_bolt
-from pytorch_bolt.Trainer import get_rank
 
 from data import MNISTDataModule
 from model import MNISTClassifier
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description='MNIST Classification')
+    parser = argparse.ArgumentParser()
     parser = MNISTDataModule.add_argparse_args(parser)
     parser = MNISTClassifier.add_argparse_args(parser)
     parser = pytorch_bolt.Loggers.add_argparse_args(parser)
@@ -79,7 +78,7 @@ def main(args):
 
 
 def logging_info(logger, message):
-    if get_rank() == 0:
+    if pytorch_bolt.Trainer.get_rank() == 0:
         logger.info(message)
 
 

@@ -35,7 +35,7 @@ def trainer(local_rank, world_size, args):
             local_rank, rank
         )
     )
-    torch.cuda.set_device(local_rank)
+    #torch.cuda.set_device(local_rank)
     device = torch.device('cuda', local_rank)
     # NCCL backend is the recommended backend to use for GPU training
     torch.distributed.init_process_group(

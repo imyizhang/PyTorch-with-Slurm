@@ -1,8 +1,8 @@
-DEBUG - full hostname: gpu004.yggdrasil
-DEBUG - work directory: /home/users/z/zhangyi9/workspace/pytorch_sif
-INFO - started loading cuDNN and CUDA
+DEBUG - full hostname: gpu008.yggdrasil
+DEBUG - work directory: /home/users/z/zhangyi9/workspace/test/PyTorch-with-Slurm/Tutorials/Quickstart-with-Slurm
+INFO - started loading Python, CUDA and cuDNN
 DEBUG - CUDA_VISIBLE_DEVICES: 0
-Fri May  7 22:07:18 2021       
+Tue May 11 20:19:03 2021
 +-----------------------------------------------------------------------------+
 | NVIDIA-SMI 460.32.03    Driver Version: 460.32.03    CUDA Version: 11.2     |
 |-------------------------------+----------------------+----------------------+
@@ -10,11 +10,11 @@ Fri May  7 22:07:18 2021
 | Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
 |                               |                      |               MIG M. |
 |===============================+======================+======================|
-|   0  TITAN RTX           On   | 00000000:1A:00.0 Off |                  N/A |
-| 41%   31C    P8    14W / 280W |      1MiB / 24220MiB |      0%      Default |
+|   0  Tesla V100-PCIE...  On   | 00000000:3E:00.0 Off |                    0 |
+| N/A   38C    P0    26W / 250W |      0MiB / 32510MiB |      0%      Default |
 |                               |                      |                  N/A |
 +-------------------------------+----------------------+----------------------+
-                                                                               
+
 +-----------------------------------------------------------------------------+
 | Processes:                                                                  |
 |  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
@@ -22,6 +22,6 @@ Fri May  7 22:07:18 2021
 |=============================================================================|
 |  No running processes found                                                 |
 +-----------------------------------------------------------------------------+
-INFO - started loading Singularity and build PyTorch SIF
+INFO - started activating virtual environment
 INFO - started running Python script
-INFO - running on cuda device with torch 1.8.1
+INFO - running on cuda device with torch 1.8.1+cu111

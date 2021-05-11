@@ -61,7 +61,7 @@ python mnist.py --batch_size=256 --num_workers=4 --pin_memory
 Single-node multi-GPU training using `torch.distributed.launch`:
 
 ```bash
-python -m torch.distributed.launch --use_env --nproc_per_node=4 main.py --batch_size=1024 --num_workers=4 --pin_memory --distributed
+python -m torch.distributed.launch --use_env --nproc_per_node=4 mnist.py --batch_size=1024 --num_workers=4 --pin_memory --distributed
 ```
 
 
@@ -77,7 +77,7 @@ python -m torch.distributed.launch --use_env --nproc_per_node=4 main.py --batch_
 Start an interactive session on a node using `salloc`, then submit a job directly using `srun`:
 
 ```bash
-srun python main.py --batch_size=1024 --num_workers=4 --pin_memory --distributed --use_slurm
+srun python mnist.py --batch_size=1024 --num_workers=4 --pin_memory --distributed --use_slurm
 ```
 
 

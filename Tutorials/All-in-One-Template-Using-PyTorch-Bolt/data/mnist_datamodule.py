@@ -39,7 +39,7 @@ class MNISTDataModule(pytorch_bolt.DataModule):
     @staticmethod
     def add_argparse_args(parent_parser):
         parser = argparse.ArgumentParser(parents=[parent_parser], add_help=False)
-        parser = DataModule.add_argparse_args(parser)
+        parser = pytorch_bolt.DataModule.add_argparse_args(parser)
         return parser
 
     @classmethod

@@ -1,0 +1,141 @@
+DEBUG - full hostname: gpu003.yggdrasil
+DEBUG - work directory: /home/users/z/zhangyi9/workspace/test/PyTorch-with-Slurm/Tutorials/Multi-Node-Multi-GPU-Training-with-Slurm
+INFO - started loading Python, CUDA, cuDNN and NCCL
+DEBUG - CUDA_VISIBLE_DEVICES: 0,1,2,3
+INFO - started activating virtual environment
+INFO - started running Python script
+
+ Let's play with MNIST using torch 1.8.1+cu111 on 4 GPU(s)!
+
+             Local Rank: 2 | Global Rank: 4
+
+
+ Let's play with MNIST using torch 1.8.1+cu111 on 4 GPU(s)!
+
+             Local Rank: 0 | Global Rank: 0
+
+
+ Let's play with MNIST using torch 1.8.1+cu111 on 4 GPU(s)!
+
+             Local Rank: 3 | Global Rank: 6
+
+
+ Let's play with MNIST using torch 1.8.1+cu111 on 4 GPU(s)!
+
+             Local Rank: 1 | Global Rank: 2
+
+
+ Let's play with MNIST using torch 1.8.1+cu111 on 4 GPU(s)!
+
+             Local Rank: 2 | Global Rank: 5
+
+
+ Let's play with MNIST using torch 1.8.1+cu111 on 4 GPU(s)!
+
+             Local Rank: 3 | Global Rank: 7
+
+
+ Let's play with MNIST using torch 1.8.1+cu111 on 4 GPU(s)!
+
+             Local Rank: 1 | Global Rank: 3
+
+
+ Let's play with MNIST using torch 1.8.1+cu111 on 4 GPU(s)!
+
+             Local Rank: 0 | Global Rank: 1
+
+            =======  Training Started =======
+
+            =======  Training Started =======
+
+            =======  Training Started =======
+
+            =======  Training Started =======
+
+            =======  Training Started =======
+
+            =======  Training Started =======
+
+            =======  Training Started =======
+
+            =======  Training Started =======
+
+ Step: [  4/4] [1/5] | Loss: 1.773 | Accuracy: 41.800%
+ Step: [  4/4] [1/5] | Loss: 1.768 | Accuracy: 41.907%
+ Step: [  4/4] [1/5] | Loss: 1.781 | Accuracy: 41.320%
+ Step: [  4/4] [1/5] | Loss: 1.783 | Accuracy: 41.907%
+ Step: [  4/4] [1/5] | Loss: 1.776 | Accuracy: 41.000%
+ Step: [  4/4] [1/5] | Loss: 1.771 | Accuracy: 42.000%
+ Step: [  4/4] [1/5] | Loss: 1.769 | Accuracy: 41.747%
+ Step: [  4/4] [1/5] | Loss: 1.759 | Accuracy: 41.520%
+ Step: [  4/4] [2/5] | Loss: 0.392 | Accuracy: 88.573%
+ Step: [  4/4] [2/5] | Loss: 0.409 | Accuracy: 87.480%
+ Step: [  4/4] [2/5] | Loss: 0.393 | Accuracy: 88.080%
+ Step: [  4/4] [2/5] | Loss: 0.382 | Accuracy: 88.427%
+ Step: [  4/4] [2/5] | Loss: 0.397 | Accuracy: 88.080%
+ Step: [  4/4] [2/5] | Loss: 0.382 | Accuracy: 88.240%
+ Step: [  4/4] [2/5] | Loss: 0.392 | Accuracy: 88.027%
+ Step: [  4/4] [2/5] | Loss: 0.383 | Accuracy: 87.960%
+ Step: [  4/4] [3/5] | Loss: 0.158 | Accuracy: 95.053%
+ Step: [  4/4] [3/5] | Loss: 0.159 | Accuracy: 95.240%
+ Step: [  4/4] [3/5] | Loss: 0.161 | Accuracy: 95.333%
+ Step: [  4/4] [3/5] | Loss: 0.161 | Accuracy: 95.240%
+ Step: [  4/4] [3/5] | Loss: 0.184 | Accuracy: 94.733%
+ Step: [  4/4] [3/5] | Loss: 0.157 | Accuracy: 95.280%
+ Step: [  4/4] [3/5] | Loss: 0.164 | Accuracy: 94.987%
+ Step: [  4/4] [3/5] | Loss: 0.163 | Accuracy: 95.240%
+ Step: [  4/4] [4/5] | Loss: 0.103 | Accuracy: 96.907%
+ Step: [  4/4] [4/5] | Loss: 0.097 | Accuracy: 96.853%
+ Step: [  4/4] [4/5] | Loss: 0.086 | Accuracy: 97.293%
+ Step: [  4/4] [4/5] | Loss: 0.102 | Accuracy: 96.813%
+ Step: [  4/4] [4/5] | Loss: 0.107 | Accuracy: 96.560%
+ Step: [  4/4] [4/5] | Loss: 0.094 | Accuracy: 97.293%
+ Step: [  4/4] [4/5] | Loss: 0.097 | Accuracy: 97.173%
+ Step: [  4/4] [4/5] | Loss: 0.105 | Accuracy: 96.573%
+ Step: [  4/4] [5/5] | Loss: 0.068 | Accuracy: 98.080%
+ Step: [  4/4] [5/5] | Loss: 0.066 | Accuracy: 97.880%
+ Step: [  4/4] [5/5] | Loss: 0.077 | Accuracy: 97.507%
+ Step: [  4/4] [5/5] | Loss: 0.064 | Accuracy: 97.973%
+ Step: [  4/4] [5/5] | Loss: 0.069 | Accuracy: 97.947%
+ Step: [  4/4] [5/5] | Loss: 0.069 | Accuracy: 97.880%
+ Step: [  4/4] [5/5] | Loss: 0.066 | Accuracy: 97.973%
+ Step: [  4/4] [5/5] | Loss: 0.067 | Accuracy: 98.013%
+
+            =======  Training Finished  =======
+
+                Finished in 0 min 6 sec :D
+
+
+            =======  Training Finished  =======
+
+                Finished in 0 min 6 sec :D
+
+
+            =======  Training Finished  =======
+
+                Finished in 0 min 6 sec :D
+
+
+            =======  Training Finished  =======
+
+                Finished in 0 min 6 sec :D
+
+
+            =======  Training Finished  =======
+
+
+            =======  Training Finished  =======
+
+                Finished in 0 min 6 sec :D
+
+                Finished in 0 min 6 sec :D
+
+
+            =======  Training Finished  =======
+
+                Finished in 0 min 6 sec :D
+
+
+            =======  Training Finished  =======
+
+                Finished in 0 min 6 sec :D
